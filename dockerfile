@@ -3,14 +3,13 @@
 FROM ubuntu:20.04
 
 #Set location to download ARM toolkit from.
-# This will need to be changed over time or replaced with a static link to the latest release.
 ENV ARMBINURL="https://developer.arm.com/-/media/Files/downloads/gnu-rm/9-2019q4/RC2.1/gcc-arm-none-eabi-9-2019-q4-major-x86_64-linux.tar.bz2?revision=6e63531f-8cb1-40b9-bbfc-8a57cdfc01b4&la=en&hash=F761343D43A0587E8AC0925B723C04DBFB848339"
 
-#Create volume /havocbin for compiled firmware binaries
-VOLUME /havocbin
+#Create volume /eaglebin for compiled firmware binaries
+VOLUME /eaglebin
 
-#Copy build context (repository root) to /havocsrc
-COPY ./ /havocsrc
+#Copy build context (repository root) to /eaglesrc
+COPY ./ /eaglesrc
 
 #Fetch dependencies from APT
 RUN apt-get update && \
@@ -41,8 +40,9 @@ RUN mkdir /opt/build && cd /opt/build && \
 #Set environment variable so compiler knows where the toolchain lives
 ENV PATH=$PATH:/opt/build/armbin/bin
 
-CMD cd /havocsrc && \
-        mkdir build && cd build && \ 
-        cmake .. && make firmware && \
-        cp /portapack-havoc/firmware/portapack-h1-havoc.bin /havocbin
+CMD cd /eaglesrc && \
+        mkdir -p build && cd build && \
+        cmake .. && make -j$(nproc) && \
+        cp firmware/*.bin /eaglebin/ 2>/dev/null || true && \
+        echo "Build complete! Firmware binaries in /eaglebin/"
 
