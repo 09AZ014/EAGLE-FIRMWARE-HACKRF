@@ -1,0 +1,95 @@
+<svg width="1280" height="320" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#16213e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f3460;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="eagle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e67e22;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1280" height="320" fill="url(#bg)"/>
+  
+  <!-- Circuit pattern -->
+  <g opacity="0.1" stroke="#00ff88" stroke-width="1" fill="none">
+    <circle cx="100" cy="100" r="40"/>
+    <circle cx="1180" cy="220" r="50"/>
+    <line x1="100" y1="100" x2="400" y2="100"/>
+    <line x1="400" y1="100" x2="400" y2="220"/>
+    <line x1="400" y1="220" x2="880" y2="220"/>
+    <line x1="880" y1="220" x2="1180" y2="220"/>
+    <circle cx="400" cy="100" r="8" fill="#00ff88"/>
+    <circle cx="400" cy="220" r="8" fill="#00ff88"/>
+    <circle cx="880" cy="220" r="8" fill="#00ff88"/>
+  </g>
+  
+  <!-- Eagle icon -->
+  <g transform="translate(80, 100)">
+    <path d="M 0,-40 L -15,-20 L -10,-10 L -20,10 L 0,5 L 20,10 L 10,-10 L 15,-20 Z" 
+          fill="url(#eagle)" filter="url(#glow)"/>
+    <circle cx="0" cy="-30" r="6" fill="#fff"/>
+  </g>
+  
+  <!-- Main title -->
+  <text x="170" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="72" font-weight="bold" 
+        fill="url(#eagle)" filter="url(#glow)">
+    EAGLE-FIRMWARE
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="170" y="190" font-family="'Segoe UI', Arial, sans-serif" font-size="24" 
+        fill="#ecf0f1" opacity="0.9">
+    Advanced PortaPack Mayhem Fork by 09AZO14
+  </text>
+  
+  <!-- Version badge -->
+  <g transform="translate(170, 210)">
+    <rect x="0" y="0" width="100" height="30" rx="15" fill="#e74c3c"/>
+    <text x="50" y="21" font-family="'Segoe UI', Arial, sans-serif" font-size="16" 
+          fill="#fff" text-anchor="middle" font-weight="bold">
+      v2.0.0
+    </text>
+  </g>
+  
+  <!-- Features -->
+  <g transform="translate(170, 250)">
+    <text x="0" y="0" font-family="'Segoe UI', Arial, sans-serif" font-size="18" fill="#3498db">
+      📡 RF Signal Mapper
+    </text>
+    <text x="250" y="0" font-family="'Segoe UI', Arial, sans-serif" font-size="18" fill="#3498db">
+      🔍 Protocol Decoder
+    </text>
+    <text x="500" y="0" font-family="'Segoe UI', Arial, sans-serif" font-size="18" fill="#3498db">
+      🎮 8+ Games
+    </text>
+    <text x="700" y="0" font-family="'Segoe UI', Arial, sans-serif" font-size="18" fill="#3498db">
+      ⚡ Optimized
+    </text>
+  </g>
+  
+  <!-- HackRF Logo representation -->
+  <g transform="translate(1100, 100)">
+    <rect x="0" y="0" width="120" height="80" rx="5" fill="#2c3e50" stroke="#00ff88" stroke-width="2"/>
+    <rect x="10" y="10" width="100" height="30" fill="#34495e"/>
+    <circle cx="20" cy="55" r="5" fill="#e74c3c"/>
+    <circle cx="35" cy="55" r="5" fill="#f39c12"/>
+    <circle cx="50" cy="55" r="5" fill="#2ecc71"/>
+    <rect x="70" y="48" width="40" height="15" fill="#3498db"/>
+    <text x="60" y="75" font-family="monospace" font-size="10" fill="#ecf0f1">HackRF</text>
+  </g>
+  
+  <!-- Bottom line -->
+  <line x1="170" y1="285" x2="900" y2="285" stroke="#00ff88" stroke-width="2" opacity="0.5"/>
+</svg>
