@@ -1,5 +1,5 @@
-# 🦅 EAGLE-FIRMWARE v2.0.0
-## **Revolutionary PortaPack Mayhem Fork** by **09AZO14**
+# EAGLE-FIRMWARE v2.0.0
+## Revolutionary PortaPack Mayhem Fork by 09AZO14
 
 [![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](https://github.com/09AZO14/eagle-firmware)
 [![License](https://img.shields.io/badge/license-GPL--2.0-green.svg)](LICENSE)
@@ -8,37 +8,37 @@
 
 ---
 
-## 📖 **TABLE OF CONTENTS**
-- [Overview](#-overview)
-- [Features](#-features)
-- [Installation](#-installation)
-- [Games](#-games)
-- [RF Applications](#-rf-applications)
-- [Building from Source](#-building-from-source)
-- [Development](#-development)
-- [Changelog](#-changelog)
-- [Credits](#-credits)
-- [License](#-license)
+## TABLE OF CONTENTS
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Games](#games)
+- [RF Applications](#rf-applications)
+- [Building from Source](#building-from-source)
+- [Development](#development)
+- [Changelog](#changelog)
+- [Credits](#credits)
+- [License](#license)
 
 ---
 
-## 🌟 **OVERVIEW**
+## OVERVIEW
 
 **EAGLE-FIRMWARE** is an advanced, feature-rich firmware for the **HackRF One + PortaPack H2** platform. Built on top of the excellent **PortaPack Mayhem** firmware, EAGLE adds innovative applications, enhanced games, and powerful RF analysis tools while maintaining 100% compatibility with the original Mayhem features.
 
-### **Why EAGLE?**
-- ✅ **All Mayhem features** + exclusive EAGLE enhancements
-- 🎮 **8+ custom games** with advanced graphics
-- 📡 **Professional RF tools** not available anywhere else
-- 🚀 **Optimized performance** for H2 hardware
-- 📱 **Modern UI/UX** improvements
-- 🔧 **Active development** and community support
+### Why EAGLE?
+- **All Mayhem features** + exclusive EAGLE enhancements
+- **8+ custom games** with advanced graphics
+- **Professional RF tools** not available anywhere else
+- **Optimized performance** for H2 hardware
+- **Modern UI/UX** improvements
+- **Active development** and community support
 
 ---
 
-## 🚀 **FEATURES**
+## FEATURES
 
-### **🎮 GAMES (8 Total)**
+### GAMES (8 Total)
 #### Original Mayhem Games (4):
 1. **Pong** - Classic arcade with AI opponent
 2. **Minesweeper** - 10x12 grid, 15 mines
@@ -46,10 +46,10 @@
 4. **2048** - Merge tiles to reach 2048
 
 #### NEW EAGLE Games (4):
-5. **Snake** 🐍 - Classic snake with levels & difficulty scaling
-6. **Tetris** 🧩 - Full tetromino rotation mechanics
-7. **Breakout** 🏓 - Paddle & ball brick breaker
-8. **Space Invaders** 👾 - Retro arcade shooter
+5. **Snake** - Classic snake with levels & difficulty scaling
+6. **Tetris** - Full tetromino rotation mechanics
+7. **Breakout** - Paddle & ball brick breaker
+8. **Space Invaders** - Retro arcade shooter
 
 **Game Features:**
 - High score tracking
@@ -59,9 +59,9 @@
 
 ---
 
-### **📡 RF APPLICATIONS**
+### RF APPLICATIONS
 
-#### **NEW: RF Signal Mapper Pro** 🗺️
+#### NEW: RF Signal Mapper Pro
 Advanced signal strength mapping with visual heatmap:
 - Real-time RSSI heatmap visualization
 - GPS coordinate tracking (with GPS module)
@@ -78,7 +78,7 @@ Advanced signal strength mapping with visual heatmap:
 - Interference detection
 - Dead zone identification
 
-#### **NEW: Protocol Decoder Pro** 🔍
+#### NEW: Protocol Decoder Pro
 Intelligent multi-protocol decoder with auto-detection:
 
 **Supported Protocols:**
@@ -100,7 +100,7 @@ Intelligent multi-protocol decoder with auto-detection:
 - Statistical analysis
 - Protocol-specific formatting
 
-#### **Enhanced Spectrum Analyzer** 📊
+#### Enhanced Spectrum Analyzer
 Improvements over stock Mayhem:
 - Faster refresh rate (60 FPS vs 30 FPS)
 - Waterfall display with 16-color gradient
@@ -111,15 +111,15 @@ Improvements over stock Mayhem:
 
 ---
 
-### **⚙️ SYSTEM ENHANCEMENTS**
+### SYSTEM ENHANCEMENTS
 
-#### **Performance**
+#### Performance
 - 20% faster boot time
 - Optimized memory usage
 - Reduced battery consumption
 - Smoother UI animations
 
-#### **UI/UX**
+#### UI/UX
 - Dark theme optimization
 - Better touch responsiveness
 - Improved text readability
@@ -128,15 +128,15 @@ Improvements over stock Mayhem:
 
 ---
 
-## 📥 **INSTALLATION**
+## INSTALLATION
 
-### **Prerequisites**
+### Prerequisites
 - HackRF One
 - PortaPack H2 / H2+ / H2M / H4M
 - MicroSD card (8GB+ recommended)
 - DFU-capable USB cable
 
-### **Step-by-Step Installation**
+### Step-by-Step Installation
 
 1. **Download Latest Release**
    ```
@@ -181,9 +181,9 @@ Improvements over stock Mayhem:
 
 ---
 
-## 🎮 **GAMES**
+## GAMES
 
-### **Controls**
+### Controls
 
 | Game | Controls |
 |------|----------|
@@ -203,9 +203,9 @@ Main Menu → Utilities → Games → [Select Game]
 
 ---
 
-## 📡 **RF APPLICATIONS**
+## RF APPLICATIONS
 
-### **RF Signal Mapper**
+### RF Signal Mapper
 
 **Location:** `Main Menu → RF Tools → RF Signal Mapper`
 
@@ -227,7 +227,7 @@ Main Menu → Utilities → Games → [Select Game]
 
 ---
 
-### **Protocol Decoder Pro**
+### Protocol Decoder Pro
 
 **Location:** `Main Menu → RF Tools → Protocol Decoder`
 
@@ -247,16 +247,16 @@ Main Menu → Utilities → Games → [Select Game]
 
 ---
 
-## 🔧 **BUILDING FROM SOURCE**
+## BUILDING FROM SOURCE
 
-### **Requirements**
+### Requirements
 
 - **OS:** Linux (Ubuntu 20.04+), macOS, WSL2
 - **Compiler:** ARM GCC 9.2.1
 - **Tools:** CMake 3.16+, Python 3.8+
 - **Storage:** 5GB free space
 
-### **Setup Build Environment**
+### Setup Build Environment
 
 **Ubuntu/Debian:**
 ```bash
@@ -275,14 +275,14 @@ brew install cmake arm-none-eabi-gcc python3 dfu-util hackrf
 # Install Ubuntu WSL2, then use Ubuntu instructions above
 ```
 
-### **Clone Repository**
+### Clone Repository
 ```bash
 git clone https://github.com/09AZO14/eagle-firmware.git
 cd eagle-firmware
 git submodule update --init --recursive
 ```
 
-### **Build Firmware**
+### Build Firmware
 ```bash
 mkdir build && cd build
 cmake ..
@@ -293,7 +293,7 @@ make -j$(nproc)
 - `firmware/portapack-h1_h2-eagle.bin` - Main firmware
 - `firmware/portapack-h1_h2-eagle-EAGLE-<hash>.bin` - Versioned
 
-### **Flash Built Firmware**
+### Flash Built Firmware
 ```bash
 cd build
 python3 ../flash.py firmware/portapack-h1_h2-eagle.bin
@@ -301,9 +301,9 @@ python3 ../flash.py firmware/portapack-h1_h2-eagle.bin
 
 ---
 
-## 💻 **DEVELOPMENT**
+## DEVELOPMENT
 
-### **Project Structure**
+### Project Structure
 ```
 eagle-firmware/
 ├── firmware/
@@ -322,7 +322,7 @@ eagle-firmware/
 └── CMakeLists.txt
 ```
 
-### **Adding New External App**
+### Adding New External App
 
 1. **Create app directory:**
    ```bash
@@ -357,7 +357,7 @@ eagle-firmware/
    make -j$(nproc)
    ```
 
-### **Coding Guidelines**
+### Coding Guidelines
 
 - Follow C++17 standards
 - Use `clang-format` for formatting
@@ -367,18 +367,18 @@ eagle-firmware/
 
 ---
 
-## 📝 **CHANGELOG**
+## CHANGELOG
 
-### **v2.0.0** (2025-01-28)
+### v2.0.0 (2025-01-28)
 #### Added
-- 🗺️ RF Signal Mapper with heatmap visualization
-- 🔍 Protocol Decoder Pro with 19 protocol support
-- 🐍 Snake game with difficulty scaling
-- 🧩 Tetris with full rotation mechanics
-- 🏓 Breakout paddle game
-- 👾 Space Invaders arcade shooter
-- 📊 Enhanced Spectrum Analyzer (60 FPS)
-- 🔋 Battery optimization (15% improvement)
+- RF Signal Mapper with heatmap visualization
+- Protocol Decoder Pro with 19 protocol support
+- Snake game with difficulty scaling
+- Tetris with full rotation mechanics
+- Breakout paddle game
+- Space Invaders arcade shooter
+- Enhanced Spectrum Analyzer (60 FPS)
+- Battery optimization (15% improvement)
 
 #### Improved
 - UI responsiveness (+30%)
@@ -394,7 +394,7 @@ eagle-firmware/
 
 ---
 
-### **v1.0.0** (2024-10-26)
+### v1.0.0 (2024-10-26)
 #### Initial Release
 - Fork from Mayhem v2.2.0
 - Added Pong, Minesweeper, Space Race, 2048
@@ -403,28 +403,28 @@ eagle-firmware/
 
 ---
 
-## 🏆 **CREDITS**
+## CREDITS
 
-### **EAGLE-FIRMWARE Development**
+### EAGLE-FIRMWARE Development
 - **Creator & Lead Developer:** [09AZO14](https://github.com/09AZO14) (2024-2025)
 - **RF Signal Mapper:** 09AZO14
 - **Protocol Decoder:** 09AZO14
 - **Games Enhancement:** 09AZO14
 
-### **Based On**
+### Based On
 - **PortaPack Mayhem:** [portapack-mayhem](https://github.com/portapack-mayhem/mayhem-firmware)
 - **PortaPack Havoc:** [furrtek](https://github.com/furrtek/portapack-havoc)
 - **Original PortaPack:** [sharebrained](https://github.com/sharebrained/portapack-hackrf)
 - **HackRF:** [Great Scott Gadgets](https://github.com/mossmann/hackrf)
 
-### **Special Thanks**
+### Special Thanks
 - PortaPack Mayhem community
 - HackRF community
 - All contributors & testers
 
 ---
 
-## 📄 **LICENSE**
+## LICENSE
 
 This project is licensed under the **GNU General Public License v2.0**.
 
@@ -447,7 +447,7 @@ See [LICENSE](LICENSE) file for full text.
 
 ---
 
-## 🔗 **LINKS**
+## LINKS
 
 - **GitHub Repository:** https://github.com/09AZO14/eagle-firmware
 - **Releases:** https://github.com/09AZO14/eagle-firmware/releases
@@ -456,7 +456,7 @@ See [LICENSE](LICENSE) file for full text.
 
 ---
 
-## ⚠️ **DISCLAIMER**
+## DISCLAIMER
 
 This firmware is provided "as is" for **educational and research purposes only**.
 
@@ -474,23 +474,23 @@ This firmware is provided "as is" for **educational and research purposes only**
 
 ---
 
-## 💬 **SUPPORT**
+## SUPPORT
 
-- 🐛 **Bug Reports:** [Open an issue](https://github.com/09AZO14/eagle-firmware/issues)
-- 💡 **Feature Requests:** [Discussions](https://github.com/09AZO14/eagle-firmware/discussions)
-- 📧 **Contact:** eagle.firmware@proton.me
+- **Bug Reports:** [Open an issue](https://github.com/09AZO14/eagle-firmware/issues)
+- **Feature Requests:** [Discussions](https://github.com/09AZO14/eagle-firmware/discussions)
+- **Contact:** eagle.firmware@proton.me
 
 ---
 
 <div align="center">
 
-### **Made with ❤️ by 09AZO14**
+### Made by 09AZO14
 
-If you find this firmware useful, please ⭐ star the repository!
+If you find this firmware useful, please star the repository!
 
 [![GitHub stars](https://img.shields.io/github/stars/09AZO14/eagle-firmware?style=social)](https://github.com/09AZO14/eagle-firmware/stargazers)
 
-**🦅 Fly Higher with EAGLE 🦅**
+**Fly Higher with EAGLE**
 
 </div>
 
