@@ -1,24 +1,24 @@
-# 🦅 EAGLE-FIRMWARE v1.0.0
-## Advanced PortaPack Mayhem Fork by **09AZO14**
+# EAGLE-FIRMWARE v1.0.0
+## Advanced PortaPack Mayhem Fork by 09AZO14
 
 ---
 
-### 🚀 FEATURES
+### FEATURES
 
-#### **NEW GAMES BY 09AZO14**
-- ✅ **Pong** - Classic arcade game with AI opponent
-- ✅ **Minesweeper** - Grid-based puzzle game (10x12, 15 mines)
-- ✅ **Space Race** - Dodge obstacles, increasing speed
-- ✅ **2048** - Slide & merge tiles to 2048
+#### NEW GAMES BY 09AZO14
+- **Pong** - Classic arcade game with AI opponent
+- **Minesweeper** - Grid-based puzzle game (10x12, 15 mines)
+- **Space Race** - Dodge obstacles, increasing speed
+- **2048** - Slide & merge tiles to 2048
 
-#### **CORE ENHANCEMENTS**
-- 🎨 Version: **EAGLE-1.0.0-09AZO14**
-- 📦 All original PortaPack Mayhem features
-- 🎮 61 external applications (+4 new)
+#### CORE ENHANCEMENTS
+- Version: **EAGLE-1.0.0-09AZO14**
+- All original PortaPack Mayhem features
+- 61 external applications (+4 new)
 
 ---
 
-### 📥 INSTALLATION
+### INSTALLATION
 
 1. Copy `FIRMWARE/` and `APPS/` from `EAGLE-FIRMWARE-SD/` to SD root
 2. Insert SD → Settings → Update Firmware
@@ -26,7 +26,7 @@
 
 ---
 
-### 🎮 GAMES
+### GAMES
 
 **Pong:** Up/Down = paddle, SELECT = reset  
 **Minesweeper:** Arrows = cursor, SELECT = reveal, BACK = flag  
@@ -35,8 +35,8 @@
 
 ---
 
-### 🏆 CREDITS
-**Author:** **09AZO14** (2025)  
+### CREDITS
+**Author:** 09AZO14 (2025)  
 **Base:** PortaPack Mayhem  
 **License:** GPL-2.0
 
