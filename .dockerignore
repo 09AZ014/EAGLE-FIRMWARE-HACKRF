@@ -1,2 +1,23 @@
-*
-!firmware/tools/docker-entrypoint.sh
+# Build artifacts
+build/
+build-output/
+*.o
+*.bin
+*.elf
+*.dfu
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+
+# Git
+.git/
+.gitignore
+
+# Docs and misc
+README*.md
+GITHUB_SETUP.md
+*.svg
+*.md
+setup_github.ps1
