@@ -48,7 +48,7 @@ void SpaceRaceView::paint(Painter& p) {
     for(int i=0;i<10;i++) {
         if(obs[i].active) p.fill_rectangle({obs[i].x-8,obs[i].y-8,16,16}, Color::red());
     }
-    auto st=*ui::Theme::getInstance()->fg_green();
+    auto st = ui::Theme::getInstance()->fg_green;
     p.draw_string({10,10}, st, "Score: "+std::to_string(score));
     if(game_over) p.draw_string({60,150}, st, "GAME OVER!");
 }

@@ -54,7 +54,7 @@ bool Game2048View::can_move() {
 void Game2048View::paint(Painter& p) {
     p.fill_rectangle({0,0,240,320}, Color::dark_grey());
     for(int y=0;y<4;y++) for(int x=0;x<4;x++) draw_tile(x,y,grid[y][x]);
-    auto st=*ui::Theme::getInstance()->fg_yellow();
+    auto st = ui::Theme::getInstance()->fg_yellow;
     p.draw_string({10,10}, st, "Score: "+std::to_string(score));
     if(game_over) p.draw_string({60,280}, st, "GAME OVER!");
 }
@@ -64,7 +64,7 @@ void Game2048View::draw_tile(int x, int y, int val) {
     Color bg=(val==0)?Color::grey():(val==2)?Color::light_grey():(val==4)?Color::yellow():(val==8)?Color::orange():(val<128)?Color::red():Color::magenta();
     painter.fill_rectangle({tx,ty,50,50}, bg);
     if(val>0) {
-        auto st=*ui::Theme::getInstance()->fg_dark();
+        auto st = ui::Theme::getInstance()->fg_dark;
         painter.draw_string({tx+10,ty+18}, st, std::to_string(val));
     }
 }
