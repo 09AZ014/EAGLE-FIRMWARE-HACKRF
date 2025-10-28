@@ -1,0 +1,7 @@
+services:
+  portapack-mayhem-dev:
+    build:
+      context: .
+      dockerfile: dockerfile-nogit
+    volumes:
+      - ".:/havoc"
