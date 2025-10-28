@@ -1,0 +1,47 @@
+=====================================================
+🦅 EAGLE-FIRMWARE - Quick GitHub Setup
+=====================================================
+
+ENQUANTO O FIRMWARE COMPILA, FAZ ISTO:
+
+1. Vai para: https://github.com/new
+
+2. Preenche:
+   - Repository name: eagle-firmware
+   - Description: 🦅 EAGLE-FIRMWARE - Advanced PortaPack Mayhem Fork with RF Signal Mapper, Protocol Decoder Pro, and 8+ Games
+   - Public
+   - NÃO inicializar com README/license
+
+3. Click "Create repository"
+
+4. Copia o URL do teu repositório (algo como: https://github.com/SEU_USERNAME/eagle-firmware.git)
+
+5. No PowerShell, executa (substituindo SEU_USERNAME):
+
+cd 'C:\Users\AZO\Desktop\Firmware Hack RF one\EAGLE-FIRMWARE'
+git remote add origin https://github.com/SEU_USERNAME/eagle-firmware.git
+git branch -M main
+git push -u origin main
+
+=====================================================
+DEPOIS DO PUSH:
+=====================================================
+
+1. Vai ao repositório no GitHub
+
+2. Settings → Topics → Adiciona:
+   - hackrf
+   - portapack
+   - firmware
+   - sdr
+   - rf
+   - eagle
+
+3. Actions → Enable workflows
+
+4. Edita README_EAGLE.md para adicionar o banner no topo:
+   ![EAGLE Banner](banner.svg)
+
+5. Cria a primeira Release v2.0.0 quando o firmware compilar!
+
+=====================================================
