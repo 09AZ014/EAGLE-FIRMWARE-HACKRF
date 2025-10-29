@@ -16,7 +16,7 @@ class GFSKPacketStudioView : public View {
    private:
     NavigationView& nav_;
     Text header_{{0,0,screen_width,16}, "GFSK Packet Studio (stub)"};
-    Text hint_{{0,20,screen_width,16}, "Press BACK para sair"};
+    Text hint_{{0,20,screen_width,16}, "Press BACK to exit"};
 };
 }
 
