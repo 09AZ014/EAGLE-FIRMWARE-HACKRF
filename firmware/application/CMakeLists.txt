@@ -315,6 +315,17 @@ set(CPPSRC
 	apps/ui_touch_calibration.cpp
 	apps/ui_touchtunes.cpp
 	apps/ui_weatherstation.cpp
+	# EAGLE new apps (stubs)
+	apps/ui_signal_inspector.cpp
+	apps/ui_burst_hunter.cpp
+	apps/ui_iq_lab.cpp
+	apps/ui_wideband_heatmap.cpp
+	apps/ui_multi_channel_recorder.cpp
+	apps/ui_triggered_iq_rec.cpp
+	apps/ui_gfsk_packet_studio.cpp
+	apps/ui_sat_beacon_tracker.cpp
+	apps/ui_tdoa_logger.cpp
+	apps/ui_rf_macro_engine.cpp
 	protocols/aprs.cpp
 	protocols/ax25.cpp
 	protocols/bht.cpp

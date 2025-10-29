@@ -251,7 +251,23 @@ external/debug_pmem/ui_debug_pmem.cpp
 
 	#battleship
 	external/battleship/main.cpp
-	external/battleship/ui_battleship.cpp		
+	external/battleship/ui_battleship.cpp
+
+	#tictactoe (EAGLE by 09AZO14)
+	external/tictactoe/main.cpp
+	external/tictactoe/ui_tictactoe.cpp
+
+	#rps (EAGLE by 09AZO14)
+	external/rps/main.cpp
+	external/rps/ui_rps.cpp
+
+	#rf_mapper (EAGLE by 09AZO14)
+	external/rf_mapper/main.cpp
+	external/rf_mapper/ui_rf_mapper.cpp
+
+	#protocol_decoder (EAGLE by 09AZO14)
+	external/protocol_decoder/main.cpp
+	external/protocol_decoder/ui_protocol_decoder.cpp
 )
 
 set(EXTAPPLIST
@@ -316,4 +332,8 @@ set(EXTAPPLIST
 	blackjack
 	battleship
 	flappybird
+	tictactoe
+	rps
+	rf_mapper
+	protocol_decoder
 )

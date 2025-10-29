@@ -74,6 +74,18 @@
 #include "pocsag_app.hpp"
 #include "soundboard_app.hpp"
 
+// EAGLE new apps (stubs)
+#include "apps/ui_signal_inspector.hpp"
+#include "apps/ui_burst_hunter.hpp"
+#include "apps/ui_iq_lab.hpp"
+#include "apps/ui_wideband_heatmap.hpp"
+#include "apps/ui_multi_channel_recorder.hpp"
+#include "apps/ui_triggered_iq_rec.hpp"
+#include "apps/ui_gfsk_packet_studio.hpp"
+#include "apps/ui_sat_beacon_tracker.hpp"
+#include "apps/ui_tdoa_logger.hpp"
+#include "apps/ui_rf_macro_engine.hpp"
+
 #include "core_control.hpp"
 #include "file.hpp"
 #include "file_reader.hpp"
@@ -156,6 +168,17 @@ const NavigationView::AppList NavigationView::appList = {
     {"notepad", "Notepad", UTILITIES, Color::dark_cyan(), &bitmap_icon_notepad, new ViewFactory<TextEditorView>()},
     {nullptr, "SD Over USB", UTILITIES, Color::yellow(), &bitmap_icon_hackrf, new ViewFactory<SdOverUsbView>()},
     {nullptr, "Debug", UTILITIES, Color::light_grey(), &bitmap_icon_debug, new ViewFactory<DebugMenuView>()},
+    /* EAGLE New Apps *****************************************************/
+    {"siginspect", "Signal Inspector", UTILITIES, Color::green(), &bitmap_icon_search, new ViewFactory<SignalInspectorView>()},
+    {"bursthunt", "Burst Hunter", UTILITIES, Color::green(), &bitmap_icon_scanner, new ViewFactory<BurstHunterView>()},
+    {"iqlab", "IQ Lab", UTILITIES, Color::green(), &bitmap_icon_utilities, new ViewFactory<IQLabView>()},
+    {"wbheatmap", "Wideband Heatmap", UTILITIES, Color::green(), &bitmap_icon_utilities, new ViewFactory<WidebandHeatmapView>()},
+    {"mcrecorder", "Multi-Ch Recorder", UTILITIES, Color::green(), &bitmap_icon_utilities, new ViewFactory<MultiChannelRecorderView>()},
+    {"tgiqrec", "Triggered IQ Rec", UTILITIES, Color::green(), &bitmap_icon_capture, new ViewFactory<TriggeredIQRecorderView>()},
+    {"gfskstudio", "GFSK Packet Studio", UTILITIES, Color::green(), &bitmap_icon_utilities, new ViewFactory<GFSKPacketStudioView>()},
+    {"satbeacon", "Sat Beacon Tracker", UTILITIES, Color::green(), &bitmap_icon_utilities, new ViewFactory<SatelliteBeaconTrackerView>()},
+    {"tdoalog", "TDOA Logger", UTILITIES, Color::green(), &bitmap_icon_utilities, new ViewFactory<TDOALoggerView>()},
+    {"rfmacro", "RF Macro Engine", UTILITIES, Color::green(), &bitmap_icon_utilities, new ViewFactory<RFMacroEngineView>()},
     //{"testapp", "Test App", UTILITIES, Color::dark_grey(), nullptr, new ViewFactory<TestView>()},
     // Dangerous apps.
     {nullptr, "Flash Utility", UTILITIES, Color::red(), &bitmap_icon_peripherals_details, new ViewFactory<FlashUtilityView>()},

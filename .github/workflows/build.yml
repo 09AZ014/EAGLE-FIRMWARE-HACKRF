@@ -1,0 +1,78 @@
+name: Build EAGLE-FIRMWARE
+
+on:
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - 'docs/**'
+      - '**/*.md'
+      - 'sdcard/**'
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build dev image (cacheable)
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: dockerfile-nogit
+          push: false
+          load: true
+          tags: portapack-dev:latest
+
+      - name: Build firmware (Ninja)
+        run: |
+          chmod +x ./dockerize.sh
+          ./dockerize.sh ninja -j$(nproc)
+
+      - name: Archive build directory
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output
+          path: |
+            build/**
+            !build/**/.git/**
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/')
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: build-output
+          path: build
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: EAGLE-FIRMWARE ${{ github.ref_name }}
+          draft: false
+          prerelease: false
+          files: |
+            build/**/*.bin
+            build/**/*.dfu
+            build/**/*.xsvf
+            build/**/*.hex
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
