@@ -1,3 +1,17 @@
+#include "ui_protocol_decoder.hpp"
+
+namespace ui::external_app::protocol_decoder {
+
+ProtocolDecoderView::ProtocolDecoderView(NavigationView& nav) : nav_{nav} {
+    add_child(&header_);
+}
+
+void ProtocolDecoderView::on_show() {
+    focus();
+}
+
+} // namespace ui::external_app::protocol_decoder
+
 /*
  * EAGLE-FIRMWARE v2.0.0 - Advanced Protocol Decoder
  * Auto-detection and decoding for multiple RF protocols

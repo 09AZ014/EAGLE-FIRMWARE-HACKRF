@@ -1,3 +1,28 @@
+/* EAGLE-FIRMWARE - RF Mapper (stub) */
+#ifndef __UI_RF_MAPPER_H__
+#define __UI_RF_MAPPER_H__
+
+#include "ui.hpp"
+#include "ui_navigation.hpp"
+#include "ui_widget.hpp"
+
+namespace ui::external_app::rf_mapper {
+
+class RFMapperView : public View {
+   public:
+    RFMapperView(NavigationView& nav);
+    void on_show() override;
+    std::string title() const override { return "RF Mapper"; }
+
+   private:
+    NavigationView& nav_;
+    Text header_{{0,0,screen_width,16}, "RF Mapper (stub)"};
+};
+
+} // namespace ui::external_app::rf_mapper
+
+#endif /* __UI_RF_MAPPER_H__ */
+
 /*
  * EAGLE-FIRMWARE v2.0.0 - RF Signal Mapper
  * Advanced signal strength mapping with GPS coordinates

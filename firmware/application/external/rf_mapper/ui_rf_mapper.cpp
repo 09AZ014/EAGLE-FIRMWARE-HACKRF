@@ -1,3 +1,17 @@
+#include "ui_rf_mapper.hpp"
+
+namespace ui::external_app::rf_mapper {
+
+RFMapperView::RFMapperView(NavigationView& nav) : nav_{nav} {
+    add_child(&header_);
+}
+
+void RFMapperView::on_show() {
+    focus();
+}
+
+} // namespace ui::external_app::rf_mapper
+
 /*
  * EAGLE-FIRMWARE v2.0.0 - RF Signal Mapper
  * Advanced signal strength mapping with GPS coordinates

@@ -1,3 +1,28 @@
+/* EAGLE-FIRMWARE - Protocol Decoder (stub) */
+#ifndef __UI_PROTOCOL_DECODER_H__
+#define __UI_PROTOCOL_DECODER_H__
+
+#include "ui.hpp"
+#include "ui_navigation.hpp"
+#include "ui_widget.hpp"
+
+namespace ui::external_app::protocol_decoder {
+
+class ProtocolDecoderView : public View {
+   public:
+    ProtocolDecoderView(NavigationView& nav);
+    void on_show() override;
+    std::string title() const override { return "Protocol Decoder"; }
+
+   private:
+    NavigationView& nav_;
+    Text header_{{0,0,screen_width,16}, "Protocol Decoder (stub)"};
+};
+
+} // namespace ui::external_app::protocol_decoder
+
+#endif /* __UI_PROTOCOL_DECODER_H__ */
+
 /*
  * EAGLE-FIRMWARE v2.0.0 - Advanced Protocol Decoder
  * Auto-detection and decoding for multiple RF protocols
